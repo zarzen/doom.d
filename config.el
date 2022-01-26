@@ -67,3 +67,6 @@
 ;;; config org-roam id
 (setq org-id-method 'ts)
 (setq org-id-ts-format "%Y-%m-%d[%H:%M:%S.%3N]"); (setq deft-use-filename-as-title nil)
+
+;; expand-region.el
+(define-key evil-visual-state-map (kbd "v") 'er/expand-region)
