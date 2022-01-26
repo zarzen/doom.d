@@ -70,3 +70,7 @@
 
 ;; expand-region.el
 (define-key evil-visual-state-map (kbd "v") 'er/expand-region)
+
+;; lsp-mode config
+(setq lsp-headerline-breadcrumb-enable t)
+(setq lsp-signature-auto-activate nil)
