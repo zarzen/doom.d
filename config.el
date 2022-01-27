@@ -74,3 +74,6 @@
 ;; lsp-mode config
 (setq lsp-headerline-breadcrumb-enable t)
 (setq lsp-signature-auto-activate nil)
+
+;; enable evil-matchit
+(global-evil-matchit-mode 1)
