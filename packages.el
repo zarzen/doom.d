@@ -15,8 +15,6 @@
 ;; https://github.com/raxod502/straight.el#the-recipe-format
 ;(package! another-package
 ;  :recipe (:host github :repo "username/repo"))
-(package! pdf-continuous-scroll-mode
-  :recipe (:host github :repo "dalanicolai/pdf-continuous-scroll-mode.el"))
 
 ;; If the package you are trying to install does not contain a PACKAGENAME.el
 ;; file, or is located in a subdirectory of the repo, you'll need to specify
@@ -53,3 +51,7 @@
 ;(unpin! t)
 
 (package! evil-matchit)
+
+;; tree-sitter
+(package! tree-sitter)
+(package! tree-sitter-langs)

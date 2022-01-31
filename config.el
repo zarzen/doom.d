@@ -77,3 +77,10 @@
 
 ;; enable evil-matchit
 (global-evil-matchit-mode 1)
+
+;; config tree-sitter
+(use-package! tree-sitter
+  :config
+  (require 'tree-sitter-langs)
+  (global-tree-sitter-mode)
+  (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
