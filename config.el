@@ -84,3 +84,8 @@
   (require 'tree-sitter-langs)
   (global-tree-sitter-mode)
   (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
+
+;; set default directory
+(setq default-directory (concat (getenv "HOME") "/"))
+
+(add-to-list 'exec-path "C:\\Users\\Zhen Zhang\\.emacs.d\\.local\\straight\\repos\\emacsql\\sqlite")
