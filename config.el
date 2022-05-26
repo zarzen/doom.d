@@ -28,7 +28,7 @@
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/Org")
+(setq org-directory "~/org")
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -89,3 +89,18 @@
 (setq default-directory (concat (getenv "HOME") "/"))
 
 (add-to-list 'exec-path "C:\\Users\\Zhen Zhang\\.emacs.d\\.local\\straight\\repos\\emacsql\\sqlite")
+
+;; config latex preview
+(setq org-latex-create-formula-image-program 'dvisvgm)
+
+;; set for org export
+;; (setq org-id-extra-files '(find-lisp-find-files org-roam-directory "\.org$"))
+;; "org-export-data: Unable to resolve link: FILE-ID"
+(defun jnf/force-org-rebuild-cache ()
+  "Rebuild the `org-mode' and `org-roam' cache."
+  (interactive)
+  (org-id-update-id-locations)
+  ;; Note: you may need `org-roam-db-clear-all'
+  ;; followed by `org-roam-db-sync'
+  (org-roam-db-sync)
+  (org-roam-update-org-id-locations))
