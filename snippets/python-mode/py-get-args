@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: Python get_args
+# uuid: python-mode-get-args
+# key: <pyargs
+# condition: t
+# --
+
+
+import argparse
+
+def get_args():
+    """"""
+    parser = argparse.ArgumentParser()
+    $1
+
+    args = parser.parse_args()
+    return args

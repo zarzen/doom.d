@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: Python main func
+# uuid: python-mode-def-if-main
+# key: <pym
+# condition: t
+# --
+
+def main():
+    """"""
+    pass
+    $0
+
+
+if __name__ == "__main__":
+    main()
