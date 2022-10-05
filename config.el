@@ -30,6 +30,9 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/Documents/Notes/org")
 
+(setq org-agenda-files (list org-directory
+                             (concat org-directory "/side-projects")))
+
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type 'visual)
