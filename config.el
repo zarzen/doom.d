@@ -107,3 +107,6 @@
   ;; followed by `org-roam-db-sync'
   (org-roam-db-sync)
   (org-roam-update-org-id-locations))
+
+(after! persp-mode
+  (setq persp-emacsclient-init-frame-behaviour-override "main"))
