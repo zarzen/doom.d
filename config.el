@@ -19,7 +19,7 @@
 ;;
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
-(setq doom-font (font-spec :family "Menlo" :size 15))
+(setq doom-font (font-spec :family "Hack Nerd Font Mono" :size 15))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
@@ -81,12 +81,6 @@
 ;; enable evil-matchit
 (global-evil-matchit-mode 1)
 
-;; config tree-sitter
-(use-package! tree-sitter
-  :config
-  (require 'tree-sitter-langs)
-  (global-tree-sitter-mode)
-  (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
 
 ;; set default directory
 (setq default-directory (concat (getenv "HOME") "/"))

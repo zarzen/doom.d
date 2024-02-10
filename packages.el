@@ -53,6 +53,3 @@
 
 (package! evil-matchit)
 
-;; tree-sitter
-(package! tree-sitter)
-(package! tree-sitter-langs)
