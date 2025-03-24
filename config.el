@@ -104,3 +104,5 @@
 
 (after! persp-mode
   (setq persp-emacsclient-init-frame-behaviour-override "main"))
+
+(add-hook 'doom-after-init-hook (lambda () (tool-bar-mode 1) (tool-bar-mode 0)))
